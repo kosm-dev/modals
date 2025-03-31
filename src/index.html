@@ -1,104 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Start gulp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
-  <title>Start gulp</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo logo" href="#">
+              <img class="logo__img" src="" alt="logo" />
+            </a>
 
-<body>
-
-
-  <div class="wrapper">
-    <header class="header">
-
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo logo" href="#">
-            <img class="logo__img" src="" alt="logo">
-          </a>
-
-          <!-- <div class="burger">
+            <!-- <div class="burger">
               <span></span>
             </div> -->
 
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
-                  Lorem.
-                </a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
-                  Lorem.
-                </a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
-                  Lorem.
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-      </div>
-
-    </header>
-    <main class="main">
-
-      <section class="main__section section">
-        <div class="container">
-          <div class="section__inner">
-            Lorem.
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#"> Lorem. </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#"> Lorem. </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#"> Lorem. </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </section>
+      </header>
+      <main class="main">
+        <section class="main__section section">
+          <div class="container">
+            <div class="section__inner">Lorem.</div>
+          </div>
+        </section>
 
-      <section class="main__section section">
+        <section class="main__section section">
+          <div class="container">
+            <div class="section__inner">Lorem.</div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
         <div class="container">
-          <div class="section__inner">
-            Lorem.
+          <div class="footer__inner">
+            <a class="logo" href="#"></a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#"> Lorem. </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#"> Lorem. </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#"> Lorem. </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </section>
-    </main>
+      </footer>
+    </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a class="logo" href="#"></a>
-          <nav class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">
-                  Lorem.
-                </a>
-              </li>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form class="callback-form">
+            <div class="callback-form__head">
+              <h3 class="callback-form__title">Зворотній дзвінок</h3>
+              <div class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.34435 6.34315L17.6581 17.6569M6.34435 17.6569L17.6581 6.34315"
+                    stroke="#282828"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
 
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">
-                  Lorem.
-                </a>
-              </li>
+            <div class="callback-form__content">
+              <div class="callback-form__box">
+                <label class="callback-form__label">Ім’я</label>
+                <input class="callback-form__input" type="text" />
+              </div>
 
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">
-                  Lorem.
-                </a>
-              </li>
-            </ul>
-          </nav>
+              <div class="callback-form__box">
+                <label class="callback-form__label">Телефон</label>
+                <input class="callback-form__input" type="text" />
+              </div>
+
+              <div class="callback-form__box">
+                <label class="callback-form__label">Коментар</label>
+                <textarea class="callback-form__textarea"></textarea>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
