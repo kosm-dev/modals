@@ -3,7 +3,11 @@ body {
   height: 100%;
 }
 
-body {}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 
 .lock {
   overflow: hidden;
@@ -92,4 +96,23 @@ body {}
 
 .burger--active span {
   transform: scale(0);
+}
+
+.trigger {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  transition: all .2s;
+}
+
+.trigger:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.section {
+  margin: 100px 0;
 }
