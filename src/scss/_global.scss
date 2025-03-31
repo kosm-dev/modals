@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+}
+
+body {}
+
+.lock {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// style
+
+// burger
+.burger {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  // z-index: 11;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  background: linear-gradient(90deg, #ec656d 0%, #ef914f 100%);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  background: linear-gradient(90deg, #ec656d 0%, #ef914f 100%);
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.burger--active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.burger--active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.burger--active span {
+  transform: scale(0);
+}
