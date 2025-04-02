@@ -5,7 +5,9 @@ const sass = require("gulp-sass")(require('sass'));
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 
-const dist = "./dist/";
+// const dist = "./dist/";
+
+const dist = "e:/programs/ospanel/domains/test"
 
 gulp.task("copy-html", () => {
   return gulp.src("./src/index.html")
